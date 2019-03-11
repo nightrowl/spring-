@@ -10,6 +10,7 @@ public class AliCondition implements Condition {
     public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata annotatedTypeMetadata) {
         Environment env = conditionContext.getEnvironment();
         String desktop = env.getProperty("sun.desktop");
+        System.out.println("ali :"  + desktop);
         if(desktop.equals("windows")){
             return true;
         }

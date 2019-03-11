@@ -10,6 +10,8 @@ public class TxCondition implements Condition {
     public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata annotatedTypeMetadata) {
         Environment env = conditionContext.getEnvironment();
         String desktop = env.getProperty("sun.desktop");
+        System.out.println("tx :" + desktop);
+
         if(desktop.equals("linux")){
             return true;
         }

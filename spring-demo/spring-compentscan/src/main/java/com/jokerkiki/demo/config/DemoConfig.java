@@ -20,11 +20,8 @@ import org.springframework.stereotype.Service;
  * class  过滤Controller注解，Service注解
  *
  */
-
-@ComponentScan(value = "com.jokerkiki.demo",excludeFilters = {
-        @ComponentScan.Filter(type=FilterType.ANNOTATION ,classes = {
-                Controller.class, Service.class
-        })
+@ComponentScan(value = "com.jokerkiki.demo" ,excludeFilters = {
+        @ComponentScan.Filter(type=FilterType.ANNOTATION,classes = Controller.class)
 })
 public class DemoConfig {
 

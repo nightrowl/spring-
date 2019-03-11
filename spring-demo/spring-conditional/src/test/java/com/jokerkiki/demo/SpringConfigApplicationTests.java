@@ -22,5 +22,7 @@ public class SpringConfigApplicationTests {
         for (String name : names){
             System.out.println(name);
         }
+        Person ps = (Person) ac.getBean("person1");
+        System.out.println(ps);
     }
 }

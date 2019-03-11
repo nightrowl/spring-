@@ -3,17 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-demo</artifactId>
+        <artifactId>spring-conditional</artifactId>
         <groupId>com.jokerkiki</groupId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../spring-conditional/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-conditional</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>../spring-bean</module>
-    </modules>
+    <artifactId>spring-bean</artifactId>
+
 
     <properties>
         <java.version>1.8</java.version>
@@ -34,6 +32,7 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>

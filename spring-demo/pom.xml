@@ -10,7 +10,10 @@
         <module>spring-import</module>
         <module>spring-importselector</module>
         <module>spring-factory</module>
-    </modules>
+        <module>../spring-bean</module>
+        <module>../spring-bean</module>
+		<module>spring-demo/spring-bean</module>
+	</modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

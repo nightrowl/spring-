@@ -1,5 +1,7 @@
 package com.jokerkiki.demo.config;
 
+import com.jokerkiki.demo.entity.Boy;
+import com.jokerkiki.demo.entity.Children;
 import com.jokerkiki.demo.entity.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,8 +19,17 @@ public class DemoConfig {
      *
      * @return
      */
-    @Bean(value = "person1")
+    @Bean(initMethod = "init" ,destroyMethod = "destroyMethod")
     public Person person(){
         return  new Person(1L,"zhangsan");
+    }
+
+    @Bean
+    public Children child(){
+        return  new Children();
+    }
+    @Bean
+    public Boy boy(){
+        return  new Boy();
     }
 }
