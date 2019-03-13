@@ -13,7 +13,8 @@
         <module>../spring-bean</module>
         <module>../spring-bean</module>
 		<module>spring-demo/spring-bean</module>
-	</modules>
+        <module>spring-value</module>
+    </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

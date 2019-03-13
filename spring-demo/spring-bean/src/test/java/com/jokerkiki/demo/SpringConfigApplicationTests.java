@@ -1,4 +1,4 @@
-package demo;
+package com.jokerkiki.demo;
 
 import com.jokerkiki.demo.config.DemoConfig;
 import com.jokerkiki.demo.entity.Children;
