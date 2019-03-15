@@ -2,6 +2,7 @@ package com.jokerkiki.demo.config;
 
 import com.jokerkiki.demo.entity.Person;
 import com.jokerkiki.demo.imports.DemoImport;
+import com.jokerkiki.demo.imports.PersonImport;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

@@ -1,8 +1,7 @@
-package demo;
+package com.jokerkiki.demo;
 
 import com.jokerkiki.demo.config.DemoConfig;
-import com.jokerkiki.demo.dao.DemoDao;
-import com.jokerkiki.demo.service.DemoService;
+import com.jokerkiki.demo.entity.Person;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -13,13 +12,11 @@ public class SpringCompentscanApplicationTests {
 	public void contextLoads() {
 	}
 	@Test
-	public void demoTest() throws Exception{
+	public void demoTest(){
 		AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(DemoConfig.class);
 		//加载方法名及id，获取依赖注入的bean
-		DemoDao demoDao = (DemoDao)ac.getBean("demoDao");
-		demoDao.demo(1);
-
-
+		Person person = (Person)ac.getBean("person1");
+		System.out.println(person);
 	}
 
 	@Test

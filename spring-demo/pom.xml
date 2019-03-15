@@ -14,6 +14,8 @@
         <module>../spring-bean</module>
 		<module>spring-demo/spring-bean</module>
         <module>spring-value</module>
+        <module>spring-autowired</module>
+        <module>spring-aspect</module>
     </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>

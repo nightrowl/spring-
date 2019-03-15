@@ -29,7 +29,7 @@ public class DemoConfig {
      * @return
      */
     @Bean
-    public Person person1(){
+    public Person person(){
         return  new Person(1L,"zhangsan");
     }
 }

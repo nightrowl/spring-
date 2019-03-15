@@ -1,6 +1,8 @@
 package com.jokerkiki.demo.aspects;
 
+import jdk.internal.org.objectweb.asm.tree.analysis.Value;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +14,7 @@ public class DemoAspect {
     public void pointCut(){
 
     }
+
 
     @Before("pointCut()")
     public void start(JoinPoint joinPoint){
@@ -32,4 +35,10 @@ public class DemoAspect {
         System.out.println(joinPoint.getSignature().getName()+ "exception : "+ exception + " : exception");
     }
 
+    @Around(value="pointCut()")
+    public void isAround(ProceedingJoinPoint joinPoint) throws Throwable{
+        System.out.println("=============================");
+      Object obj =   joinPoint.proceed();
+        System.out.println( obj + "++++++++++++++++++++++++++++++++++++++++");
+    }
 }

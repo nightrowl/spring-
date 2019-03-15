@@ -1,10 +1,10 @@
 package com.jokerkiki.demo.config;
 
-import com.jokerkiki.demo.entity.Boy;
 import com.jokerkiki.demo.entity.Children;
 import com.jokerkiki.demo.entity.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 
 /**
@@ -19,17 +19,15 @@ public class DemoConfig {
      *
      * @return
      */
-    @Bean(initMethod = "init" ,destroyMethod = "destroyMethod")
+    /*@Bean(initMethod = "init" ,destroyMethod = "destroyMethod")
+    @Scope("prototype")
     public Person person(){
         return  new Person(1L,"zhangsan");
-    }
+    }*/
 
     @Bean
     public Children child(){
         return  new Children();
     }
-    @Bean
-    public Boy boy(){
-        return  new Boy();
-    }
+
 }
