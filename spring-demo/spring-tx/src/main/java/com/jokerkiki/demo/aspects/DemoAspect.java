@@ -34,7 +34,7 @@ public class DemoAspect {
         System.out.println(joinPoint.getSignature().getName()+ "exception : "+ exception + " : exception");
     }
 
-  /*  @Around(value="pointCut()")
+/*    @Around(value="pointCut()")
     public void isAround(ProceedingJoinPoint joinPoint) throws Throwable{
         System.out.println("=============================");
       Object obj =   joinPoint.proceed();
